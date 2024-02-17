@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+
+<head>
+    <title>Медицинский портал для врачей uMEDp</title>
+    <meta name="viewport" content="width=1182" />
+    <link rel="shortcut icon" href="/img/umedp/favicon.ico" type="image/png">
+    <meta name="yandex-verification" content="f1e6b81e20ec10a4" />
+	
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Медицинский портал для врачей" />
+	<meta property="og:url" content="https://edu.umedp.ru/" />
+	<meta property="og:site_name" content="Медицинский портал для врачей" />
+	<meta property="article:modified_time" content="2022-04-22T06:36:17+00:00" />
+	<meta property="og:image" content="https://umedp.ru/upload/medialibrary/fe8/umedp.logo_512.jpg" />
+	<meta property="og:image:width" content="512" />
+	<meta property="og:image:height" content="512" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	
+    <link rel='stylesheet' id='bootstrap-css' href='/css/bootstrap.min.css?ver=4.9.15' type='text/css' media='all' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/fonts/icomoon.css" type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css' href='/css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="/css/a_style.css" type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/umedp.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="/css/content.css" type='text/css' media='all' />
+    <link rel="stylesheet" href="/css/umedp/color.css" type='text/css' media='all' />
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type='text/javascript' src='/js/jquery-migrate.js?ver=1.4.1'></script>
+</head>
+
+<body>
+
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(71073703, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/71073703" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+
+    <div class="container">
+
+        <div class="header row">
+            <!-- авторизация и статьи -->
+            <div class="header_info">
+                <!-- авторизация -->
+                <div class="block_reg" wfd-id="408">
+
+                                            <div id="bxdynamic_user-block_start" style="display:none"></div>
+                        <div class="auth_user_label" onclick="show_window_auth(this)">
+                            <a class="link" href="/user/login">вход</a>
+                        </div>
+                        <div class="ugol"></div>
+
+                        <div class="registration_label">
+                            <a class="link" id="auth_top" href="/user/signup">
+                                регистрация
+                            </a>
+                        </div>
+                        <div class="ugol"></div>
+                    
+
+
+                    <div id="bxdynamic_user-block_end" style="display:none" wfd-id="410"></div>
+                    <div class="clear" wfd-id="409"></div>
+                </div>
+                <!-- /авторизация -->
+            </div>
+            <!-- /авторизация и кол-во статей -->
+            <div class="header_info">
+                <!-- кол-во статей -->
+                <div class="site_counter" wfd-id="417">
+                    <div class="description_label" wfd-id="420">
+                        количество статей
+                    </div>
+                    <div class="count_label" wfd-id="419">
+                        6196
+                    </div>
+                    <div class="clear" wfd-id="418"></div>
+                </div>
+            </div>
+            <!-- логотип -->
+            <div id="site_logo">
+                <a href="https://umedp.ru/"><img src="/img/umedp-logo.jpg" alt="uMEDp логотип"></a>
+                <div class="text-logo" wfd-id="422">Медицинский портал для врачей</div>
+            </div>
+            <!-- /логотип -->
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid border_top_botoom">
+        <div class="container">
+            <div class="menu_container  row" wfd-id="360">
+                <div class="main_menu" wfd-id="370">
+
+                    <div class="medforum_top_menu2" wfd-id="371">
+
+                        <div class="selected_elem_block2 first_elem_block2" wfd-id="402">
+                            <a href="https://umedp.ru/" onclick="resetFiltersNew(/);" class="blockdis"><span class="name_menu_item2 dop_length" wfd-id="404">ГЛАВНАЯ</span></a>
+
+                            <div class="clear" wfd-id="403"></div>
+                        </div>
+                        <!--<div class = "delim_menu2"></div>-->
+
+                        <div class="elem_block2" id="news" wfd-id="399">
+                            <a href="https://umedp.ru/news/" onclick="resetFiltersNew(/news/);" class="blockdis"><span class="name_menu_item2 dop_length" wfd-id="401">НОВОСТИ</span></a>
+
+                            <div class="clear" wfd-id="400"></div>
+                        </div>
+                        <!--<div class = "delim_menu2"></div>-->
+
+                        <div class="parent_elem_block2" id="articles" wfd-id="394">
+                            <a class="blockdis" href="https://umedp.ru/articles/" onclick="resetFiltersNew(/articles/);"><span class="name_menu_item2" wfd-id="398">СТАТЬИ</span></a>
+
+
+                            <div class="clear" wfd-id="397"></div>
+                            <div class="top_submenu2" wfd-id="396"></div>
+                            <div class="submenu" wfd-id="395">
+                                <div class="container_submenu" style="width:158px">
+
+                                    <div class="column_submenu"><a href="javascript: ar_filter_elem(this, 'PROPERTY_CATEGORY_MEDICINE', 183, 'theme_filter_news');">
+                                            <span class="blockdis name_submenu_item2">
+                                                Теория </span>
+                                        </a>
+
+                                        <a href="javascript: ar_filter_elem(this, 'PROPERTY_CATEGORY_MEDICINE', 184, 'theme_filter_news');">
+                                            <span class="blockdis name_submenu_item2">
+                                                Практика </span>
+                                        </a>
+
+                                        <a href="javascript: ar_filter_elem(this, 'PROPERTY_CATEGORY_MEDICINE', 185, 'theme_filter_news');">
+                                            <span class="blockdis name_submenu_item2">
+                                                Исследования </span>
+                                        </a>
+
+                                        <a href="javascript: ar_filter_elem(this, 'PROPERTY_CATEGORY_MEDICINE', 187, 'theme_filter_news');">
+                                            <span class="blockdis name_submenu_item2">
+                                                Интервью </span>
+                                        </a>
+
+                                        <a href="javascript: ar_filter_elem(this, 'PROPERTY_CATEGORY_MEDICINE', 188, 'theme_filter_news');">
+                                            <span class="blockdis name_submenu_item2">
+                                                Клинические случаи </span>
+                                        </a>
+
+                                        <a href="javascript: ar_filter_elem(this, 'PROPERTY_CATEGORY_MEDICINE', 190, 'theme_filter_news');">
+                                            <span class="blockdis name_submenu_item2">
+                                                Обзоры </span>
+                                        </a>
+
+                                        <a href="javascript: ar_filter_elem(this, 'PROPERTY_CATEGORY_MEDICINE', 248, 'theme_filter_news');">
+                                            <span class="blockdis name_submenu_item2">
+                                                Медицинский форум </span>
+                                        </a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parent_elem_block2" id="magazines" wfd-id="389">
+                            <a href="https://umedp.ru/magazines/" onclick="resetFiltersNew(/magazines/);" class="blockdis"><span class="name_menu_item2 dop_length" wfd-id="393">ЖУРНАЛЫ</span></a>
+
+                            <div class="clear" wfd-id="392"></div>
+                            <div class="top_submenu2" wfd-id="391"></div>
+                            <div class="submenu zindex99" wfd-id="390">
+                                <div class="container_submenu width300">
+                                    <div class="column_submenu width300" id="sub_mag"><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/"><span class="name_submenu_item2 blockdis">Эффективная фармакотерапия</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/akusherstvo-i-ginekologiya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Акушерство и гинекология</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/allergologiya-i-immunologiya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Аллергология и иммунология</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/anesteziologiya-i-reanimatologiya-/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Анестезиология и реаниматология </span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/gastroenterologiya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Гастроэнтерология</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/dermatologiya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Дерматовенерология и дерматокосметология</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/kardiologiya-i-angiologiya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Кардиология и ангиология</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/nevrologiya-i-psikhiatriya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Неврология и психиатрия</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/onkologiya-gematologiya-i-radiologiya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Онкология, гематология и радиология</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/oftalmologiya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Офтальмология</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/pediatriya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Педиатрия</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/effektivnaya-farmakoterapiya-pulmonologiya-i-otorinolaringologiya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Пульмонология и оториноларингология</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/revmatologiya-travmatologiya-i-ortopediya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Ревматология, травматология и ортопедия</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/urologiya-i-nefrologiya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Урология и нефрология</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/endokrinologiya/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Эндокринология</span></a><a href="https://umedp.ru/magazines/effektivnaya-farmakoterapiya-/epidemiologiya-i-infektsii/"><span class="name_submenu_item2 name_submenu_item2_child blockdis">Эпидемиология и инфекции</span></a><a href="https://umedp.ru/magazines/vestnik-semeynoy-meditsiny/"><span class="name_submenu_item2 blockdis">Вестник семейной медицины</span></a><a href="https://umedp.ru/magazines/zhurnal-meditsinskiy-forum-/"><span class="name_submenu_item2 blockdis">Медицинский форум</span></a><a href="https://umedp.ru/magazines/hi-med-vysokie-tekhnologii-v-meditsine/"><span class="name_submenu_item2 blockdis">Hi+Med. Высокие технологии в медицине</span></a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class = "delim_menu2"></div>-->
+
+                        <div class="parent_elem_block2" id="conference" wfd-id="384">
+                            <a class="blockdis" href="https://umedp.ru/conference/" onclick="filter_elem_mer(this, 'UNSET', 'del', 'date_filter_news');"><span class="name_menu_item2" wfd-id="388">МЕРОПРИЯТИЯ</span></a>
+
+
+                            <div class="clear" wfd-id="387"></div>
+                            <div class="top_submenu2" wfd-id="386"></div>
+                            <div class="submenu" wfd-id="385">
+                                <div class="container_submenu" style="width:158px">
+
+                                    <div class="column_submenu"><a href="https://umedp.ru/conference/plan/">
+                                            <span class="blockdis name_submenu_item2">
+                                                Планируемые </span>
+                                        </a>
+
+                                        <a href="https://umedp.ru/conference/old/">
+                                            <span class="blockdis name_submenu_item2">
+                                                Прошедшие </span>
+                                        </a>
+
+                                        <a href="https://umedp.ru/conference/photoreports/">
+                                            <span class="blockdis name_submenu_item2">
+                                                Фотоотчеты </span>
+                                        </a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elem_block2" id="video" wfd-id="381">
+                            <a href="https://expo.umedp.ru/expo/all" target="_blank" class="blockdis"><span class="name_menu_item2 dop_length">3D ВЫСТАВКА</span></a>
+
+                            <div class="clear" wfd-id="382"></div>
+                        </div>
+                        <div class="elem_block2" id="video" wfd-id="381">
+                            <a href="https://umedp.ru/video/" onclick="resetFiltersNew(/video/);" class="blockdis"><span class="name_menu_item2 dop_length" wfd-id="383">ВИДЕО</span></a>
+
+                            <div class="clear" wfd-id="382"></div>
+                        </div>
+                        <!--<div class = "delim_menu2"></div>-->
+
+                        <div class="elem_block2" id="press_releases" wfd-id="378">
+                            <a href="https://umedp.ru/press_releases/" onclick="resetFiltersNew(/press_releases/);" class="blockdis"><span class="name_menu_item2 dop_length" wfd-id="380">ПРЕСС-РЕЛИЗЫ</span></a>
+
+                            <div class="clear" wfd-id="379"></div>
+                        </div>
+                        <!--<div class = "delim_menu2"></div>-->
+
+                        <div class="parent_elem_block2" id="online-events" wfd-id="373">
+                            <a class="blockdis" href="https://umedp.ru/online-events/" onclick="resetFiltersNew(/online-events/);"><span class="name_menu_item2" wfd-id="377">ОНЛАЙН-МЕДИА</span></a>
+
+
+                            <div class="clear" wfd-id="376"></div>
+                            <div class="top_submenu2" wfd-id="375"></div>
+                            <div class="submenu" wfd-id="374">
+                                <div class="container_submenu" style="width:158px">
+
+                                    <div class="column_submenu"><a href="https://umedp.ru/clinical-task/">
+                                            <span class="blockdis name_submenu_item2">
+                                                Клинические задачи </span>
+                                        </a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear" wfd-id="372"></div>
+                    </div>
+
+
+                </div>
+
+                <div class="search_block" wfd-id="363">
+                    <div id="search-block-cache" wfd-id="364">
+                        <div id="title-search" wfd-id="365">
+                            <form action="https://umedp.ru/search/" wfd-id="366">
+                                <input name="s" id="submitSearch" type="submit" style="display:none;" value="Поиск" wfd-id="427">
+                                <div class="search-input" wfd-id="369">
+                                    <input placeholder="Поиск..." id="title-search-input" type="text" name="q" value="" size="40" maxlength="200" autocomplete="off" wfd-id="426">
+                                </div>
+                                <div class="search-button" onclick="searchStart()" wfd-id="368">
+                                    <img width="44" height="32" src="/img/search1.png" alt="Поиск">
+                                </div>
+                                <div class="clear" wfd-id="367"></div>
+
+                            </form>
+                        </div>
+
+                        <script type="text/javascript">
+                            jQuery(function($) {
+                                //$(".search-input input").Watermark("Поиск","#dddccf");
+                            });
+                            var jsControl = new JCTitleSearch({
+                                //'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
+                                'AJAX_PAGE': '/',
+                                'CONTAINER_ID': 'title-search',
+                                'INPUT_ID': 'title-search-input',
+                                'MIN_QUERY_LEN': 2
+                            });
+
+                            function searchStart() {
+                                $("#submitSearch").click();
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="clear" wfd-id="362"></div>
+                <div id="umedp" style="display:none" wfd-id="361"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/jquery.inputmask.bundle.min.js" type="text/javascript"></script>
+<script src="/js/jquery.inputmask-multi.min.js" type="text/javascript"></script>
+<script src="/js/password_view.js" type="text/javascript"></script>
+<style>
+    .militarywed .h_vhod {
+        color: #009fe3;
+    }
+    .nav-tabs > li {
+        float: left;
+        margin-bottom: -2px;
+    }
+
+    #e_login {
+        width: 100%;
+        background-image: url("/img/e_login_fon.png");
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 150px 0 20px 0;
+    }
+
+    .login_e {
+        display: block;
+        margin: 80px auto 30px auto;
+        width: 667px;
+
+    }
+
+
+    .login_e a.nav-link {
+        display: block;
+        padding: 10px 67px;
+    }
+    #remember_password {
+        width: 15px;
+        top: 2px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .nav-tabs .nav-link {
+        margin-bottom: -1px;
+        border: 1px solid transparent;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 13px;
+    }
+
+    .login_e a.nav-link {
+        background-color: #009fe3;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    .login_e a.nav-link.active {
+        border-color: #ccc #ccc #fff;
+        background-color: #fff;
+        color: #009fe3;
+    }
+
+    .nav-tabs > li > a:hover {
+        color: #009fe3;
+    }
+
+    #myTabContent {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-top: none;
+        border-radius: 0 0 10px 10px;
+        background-color: #fff;
+        box-shadow: 0 7px 7px rgba(0, 0, 0, .2);
+        background-image: url("/img/e_platforma.png");
+        background-repeat: no-repeat;
+        background-position: right 70px center;
+    }
+
+    .login_e_p {
+        display: block;
+        margin: 25px auto 100px auto;
+        text-align: center;
+        font-size: 13px;
+        color: #777;
+        line-height: 22px;
+        max-width: 667px;
+    }
+
+    #e_login #inputPassword {
+        width: 100%;
+    }
+
+    #e_login .tab-pane {
+        width: 60%;
+    }
+
+    #inputPhone, #inputRegion, .form-control {
+        width: 100%;
+    }
+
+    #e_login input:not([type]), #e_login input[type="color"], #e_login input[type="email"], #e_login input[type="number"], #e_login input[type="password"], #e_login input[type="tel"], #e_login input[type="url"], #e_login input[type="text"], select {
+        color: #000;
+        font-family: 'Roboto';
+        transition: all .15s;
+        outline: none;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        font-size: 16px;
+        line-height: 21px;
+        height: 40px;
+        padding: 15px 8px;
+        overflow: hidden;
+        border: 1px solid #E2E2E2;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        box-shadow: inset 0px 0px 0px 0px #eeeeee;
+        background-image: none;
+    }
+
+    #e_login .password-control, #e_login .password-control-confirm {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        display: inline-block;
+        width: 28px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    #e_login .form-group {
+        margin-bottom: 14px;
+    }
+
+    #e_login .kn_vhod {
+        width: 100%;
+        height: 44px;
+        margin: 12px 0;
+        padding: 0px;
+        font-weight: normal;
+        background-color: #009fe3;
+    }
+
+    #e_login .form-group.no_margin {
+        margin-bottom: 0px;
+        padding-bottom: 0;
+    }
+.login_in_account.alert {
+    width: 667px;
+}
+</style>
+
+<div id="e_login">
+            <div class="h_vhod">Вход</div>
+    <div class="login_e">
+
+
+        <ul class="nav nav-tabs " id="myTab" role="tablist">
+            <li class="nav-item active" role="presentation">
+                <a class="nav-link
+                " id="password-tab" data-toggle="tab" href="#password" role="tab"
+                   aria-controls="password"
+                   aria-selected="true" onclick="javascript:document.getElementById('elogin').reset();">ПО
+                    ПАРОЛЮ</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link " id="phone-tab" data-toggle="tab" href="#phone" role="tab"
+                   aria-controls="phone"
+                   aria-selected="false" onclick="javascript:document.getElementById('elogin').reset();">ПО
+                    ТЕЛЕФОНУ</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="email-tab" data-toggle="tab" href="#email" role="tab"
+                   aria-controls="email"
+                   aria-selected="false" onclick="javascript:document.getElementById('elogin').reset();">ПО
+                    ПОЧТЕ</a>
+            </li>
+
+        </ul>
+        <form method="post" action="/user/login-e" id="elogin" role="form">
+            <div class="tab-content" id="myTabContent">
+
+
+                <div class="tab-pane fade" id="phone" role="tabpanel"
+                     aria-labelledby="phone-tab">
+                    <div style="margin-top: 40px">
+                        <input type="hidden" name="id_event" value="">
+                        <input type="hidden" name="id_training" value="">
+                        <input type="hidden" name="utm" value="">
+
+                        <div class="form-group col-md-12">
+                            <label for="inputPhone" class="control-label">Введите Ваш номер телефона</label>
+                            <input name="phone" type="text" class="form-control" id="inputPhone"
+                                   placeholder=""
+                                   value="7" required>
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <button type="button" class="kn kn_layers kn_vhod" onclick="sendForm(1)">
+                                ПРОДОЛЖИТЬ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="email" role="tabpanel" aria-labelledby="email-tab">
+                    <div style="margin-top: 40px">
+
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail" class="control-label">Введите Ваш адрес эл.
+                                почты</label>
+                            <input name="email" type="text" class="form-control" id="inputEmail"
+                                   placeholder="example@email.ru" value="" required="">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <button type="button" class="kn kn_layers kn_vhod" onclick="sendForm(2)">
+                                ПРОДОЛЖИТЬ
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade active in
+                                " id="password" role="tabpanel" aria-labelledby="password-tab">
+
+
+                    <div class="form-group col-md-12">
+                        <label for="inputEmail" class="control-label">Введите Ваш логин</label>
+                        <input name="login" type="text" class="form-control" id="inputEmail"
+                               placeholder="example@email.ru" value="" required="">
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                    </div>
+
+
+                    <div class="form-group password col-md-12">
+                        <input name="password" type="password" placeholder="Пароль" data-minlength="5"
+                               class="form-control password" id="inputPassword">
+                        <div onclick="viewPassw();" class="password-control"></div>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <button type="button" class="kn kn_layers kn_vhod" onclick="sendForm(3)">ПРОДОЛЖИТЬ
+                        </button>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <div class="row">
+                            <div class="form-group col-md-6 no_margin">
+                                <input type="checkbox" id="remember_password" name="remember_password">
+                                <label>
+                                    Запомнить пароль
+                                </label>
+                            </div>
+                            <div class="form-group col-md-6 text-right no_margin">
+                                <a href="/user/recover">Забыли пароль?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+            <input type="hidden" id="vid" name="vid" value="login">
+        </form>
+
+        <p class="login_e_p">
+            Впервые регистрируетесь на мероприятие и у Вас еще нет аккаунта? <br>
+            <a href="/user/signup">Зарегистрируйтесь в едином портале</a> и получите доступ к личному
+            кабинету.
+        </p>
+    </div>
+
+    <script src="/js/script_maska_phone.js" type="text/javascript"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdqvM8ZAAAAALpBX9LGw2EIgQa3BvuNydCMG-tI"></script>
+    <script>
+
+        function sendForm(n) {
+            grecaptcha.execute('6LdqvM8ZAAAAALpBX9LGw2EIgQa3BvuNydCMG-tI', {action: 'contact'}).then(function (token) {
+                $('#g-recaptcha-response').val(token);
+                if (n == 1) {
+                    $('#vid').val('phone');
+                }
+                if (n == 2) {
+                    $('#vid').val('email');
+                }
+                if (n == 3) {
+                    $('#vid').val('login');
+                }
+                $('#elogin').submit();
+            });
+            //$('#elogin').submit();
+        }
+
+    </script>
+
+    <div id="footer-wrapper" class="container-fluid">
+        <footer>
+            <div class="container">
+                <div class="footer_container_left">
+                    <div class="footer-title">
+                        О медицинском портале uMEDp
+                    </div>
+                    <div class="footer-text-block" wfd-id="19">
+                        Медицинский портал для врачей uMEDp (Universal Medical Portal) создан при участии ведущих экспертов различных областей медицины, много лет сотрудничающих с издательским домом «Медфорум». Собранные в рамках издательских проектов научно-медицинские материалы стали отправной точкой в развитии сетевого ресурса. <br>
+                        <br>
+                        Информация на сайте uMEDp&nbsp;носит научный, справочный характер, предназначена&nbsp;исключительно для специалистов здравоохранения.<br>
+                    </div>
+                    <div class="footer-text-block" wfd-id="18">
+                        uMEDp - медицинский портал для врачей, объединяющий информацию о современных решениях для практики. Статьи экспертов по основным специальностям, обзоры, результаты исследований, клинические разборы, интервью с ведущими специалистами, международные и российские новости, видеоматериалы (в прямой трансляции или записи) составляют основное содержание портала.
+                    </div>
+                    <div class="footer-text-block" wfd-id="17">
+                    </div>
+                    <div class="footer-text-block-menu" wfd-id="16">
+                        <a href="https://umedp.ru/search/usloviya-ispolzovaniya.php">Условия использования</a> <a target="_blank" href="https://umedp.ru/privacy-policy/">Политика конфиденциальности</a>&nbsp;<a href="https://umedp.ru/feedback/">Связаться с нами</a>
+                    </div>
+                    <div class="footer-text-metrika" wfd-id="15">
+                        <!-- Yandex.Metrika informer -->
+                        <a href="https://metrika.yandex.ru/stat/?id=71073703&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/71073703/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="71073703" data-lang="ru" /></a>
+                        <!-- /Yandex.Metrika informer -->
+                    </div>
+                    <br>
+                </div>
+                <div class="footer_container_right" wfd-id="12">
+                    <a style="white-space: nowrap;" href="https://umedp.ru/sections_medicine/obstetrics-and-gynecology/" target="_blank">Акушерство и гинекология</a> <a style="white-space: nowrap;" href="https://umedp.ru/sections_medicine/allergology-and-immunology/" target="_blank">Аллергология и иммунология</a> <a href="https://umedp.ru/sections_medicine/gastroenterologiya/">Гастроэнтерология</a> <a href="https://umedp.ru/sections_medicine/dermatovenerology/">Дерматовенерология</a> <a style="white-space: nowrap;" href="https://umedp.ru/sections_medicine/infectious-diseases/">Инфекционные болезни</a> <a href="https://umedp.ru/sections_medicine/kardiologiya/">Кардиология</a> <a href="https://umedp.ru/sections_medicine/nevrologiya/">Неврология</a> <a href="https://umedp.ru/sections_medicine/onkologiya/">Онкология</a> <a href="https://umedp.ru/sections_medicine/otorinolaringologiya/">Оториноларингология</a> <a href="https://umedp.ru/sections_medicine/ophthalmology/">Офтальмология</a> <a href="https://umedp.ru/sections_medicine/pediatriya/">Педиатрия</a> <a href="https://umedp.ru/sections_medicine/pulmonologiya/">Пульмонология</a> <a href="https://umedp.ru/sections_medicine/revmatologiya/"> Ревматология</a> <a href="https://umedp.ru/sections_medicine/urologiya/">Урология</a> <a href="https://umedp.ru/sections_medicine/endokrinologiya/">Эндокринология</a>
+                    <div class="small-logo" wfd-id="13">
+                        <img alt="umedp Лого" src="/img/umedp-logo.jpg">
+                    </div>
+                    <br>
+                </div>
+                <div class="clear" wfd-id="11"></div>
+            </div>
+            <div class="clear" wfd-id="9"></div>
+        </footer>
+    </div>
+
+    <div class="copyright" wfd-id="6">
+        <div class="copyright-footer" wfd-id="7">
+            Copyright © 2024 МЕДФОРУМ. Все права защищены. Данный сайт также содержит материалы, принадлежащие третьей стороне, охраняемые законом РФ об авторских правах.
+        </div>
+    </div>
+    <script type='text/javascript' src='/js/bootstrap.min.js'></script>
+    <script src="/js/a_script.js"></script>
+
+</body>
+
+</html>
+<!--8efaf9743e0d8520103d45a7da9d71f1-->
