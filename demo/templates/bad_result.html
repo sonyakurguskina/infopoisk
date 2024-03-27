@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вывод значений</title>
+</head>
+<body>
+<a href="/">К поиску</a>
+<h1>По запросу {{input_value}} ничего не найдено</h1>
+
+Рекомендации:
+<ul style="margin-top: 20px">
+    <li>Убедитесь, что все слова написаны без ошибок.</li>
+    <li>Попробуйте использовать другие ключевые слова.</li>
+    <li>Попробуйте использовать более популярные ключевые слова.</li>
+</ul>
+
+<img src="{{ url_for('static', filename='img.png') }}" width="300px" height="auto" alt="not found">
+</body>
+</html>

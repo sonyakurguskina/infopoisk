@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вывод значений</title>
+    <style>
+        .pagination {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .pagination li {
+            margin-right: 10px;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<a href="/">К поиску</a>
+<h1>Результатов по запросу {{input_value}}: {{total_results}}</h1>
+<ul>
+    {% for value in result[results_start:results_end] %}
+    <li><a href={{ value }} target="_blank">{{ value }}</a></li>
+    {% endfor %}
+</ul>
+<ul class="pagination">
+    {% for page_num in range(1, total_pages + 1) %}
+        <li><a href="?input_value={{input_value}}&page={{ page_num }}">{{ page_num }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>

@@ -70,21 +70,26 @@ doc_lengths = {doc: calculate_doc_vector_length(doc_to_lemma[doc]) for doc in do
 token_to_lemma = load_lemma_tokens()
 inverted_index = get_inverted_index()
 
+
+def search(user_input):
+    tokens = word_tokenize(user_input, language='russian')
+    lemmas = [token_to_lemma[token] for token in tokens if token in token_to_lemma]
+    doc_set = set()
+
+    for lemma in lemmas:
+        doc_set = merge_or(doc_set, inverted_index.get(lemma, set()))
+    results = {doc: get_cosine_similarity(lemmas, doc_to_lemma[str(doc) + '.txt'], doc_lengths[str(doc) + '.txt'])
+               for doc in doc_set}
+    return dict(sorted(results.items(), key=lambda r: r[1], reverse=True))
+
+
 if __name__ == '__main__':
     while True:
         user_input = input("Input search expression:\n")
         if user_input.lower() == 'exit':
             exit()
         try:
-            tokens = word_tokenize(user_input, language='russian')
-            lemmas = [token_to_lemma[token] for token in tokens if token in token_to_lemma]
-            doc_set = set()
-
-            for lemma in lemmas:
-                doc_set = merge_or(doc_set, inverted_index.get(lemma, set()))
-            results = {doc: get_cosine_similarity(lemmas, doc_to_lemma[str(doc) + '.txt'], doc_lengths[str(doc) + '.txt'])
-                       for doc in doc_set}
-            print(dict(sorted(results.items(), key=lambda r: r[1], reverse=True)))
+            print(search(user_input))
 
         except Exception as e:
             print(f"Error occurred: {e}. Please try again")
